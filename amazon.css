@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{height:50px;
+width: 100px;
+
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}  
+/* here logo is inside navlogo, so without giving height logo doesnt appear in site */
+
+
+.border{  border: 1.5px solid transparent;}
+.border:hover{
+ 
+    border: 1.5px solid white;
+}
+
+/* box2    */
+
+.add-f{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+   
+
+}
+
+.add-s{
+   font-size: 1rem;
+   margin-left: 3px;
+
+
+}
+
+.add-icon{ display: flex;
+align-items: center;}
+
+
+/* box3 */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    /* border-radius: 4px; this makes all 4 sides curved ,but we want onle left side edges curved */
+
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+    border: none;
+}
+
+.search-input{
+     width: 100%;   /* this covers all remaining space in nav-search box-sizing: ; */
+font-size: 1rem;
+border: none;
+
+
+
+    }
+
+    .search-icon{
+        width: 45px;
+        display: flex;
+justify-content: center;       /*this makes icon in centre horizontaly*/
+
+        align-items: center;   /*this makes icon in centre vertically*/
+        font-size: 1.2rem;
+        background-color: #febd68;
+        border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+        
+    }
+
+    /*box4*/
+
+    span{
+        font-size: 0.7rem;
+    }
+
+    .nav-second{
+        font-size: 0.85rem;
+        font-weight: 700;  /*bold*/
+    }
+
+    /* box6*/
+    .nav-cart i{
+        font-size: 30px;
+
+    }
+
+    .nav-cart{
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+
+    /* pane;*/
+
+    .panel{
+        color: white;
+        height:40px ;
+        background-color: #222f3d ;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .panel-ops p{
+        display: inline;
+        margin-left: 15px;
+    }
+    .panel-ops{
+        width: 70%;
+        font-size: 0.8rem;
+    }
+
+    .deals{
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    /* hero section     */
+    .hero-section{
+        height: 380px;   
+        width: 100%;
+
+        
+        /* transition:none;
+        /* translate: 100%; */
+        /* transition-duration: 5s;
+        transition-timing-function: ease-in;*/
+        
+        background-image: url(hero_image1.jpg);
+        background-size: cover;  
+           /* without hiving dimentions picture doesnt appear*/
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; /* hero message goes botton*/
+
+    }
+
+   
+    /* .img1{
+        translate: 100%;
+        transition:all;
+        transition-delay: 1s;
+        transition-duration: 5s;
+        transition-timing-function: ease-in;
+        background-size: cover;
+        background-image: url(hero_image1.jpg);
+        width: 100%;
+        height: 380px;   } */
+
+        .img2{
+            transition:all;
+            translate: 100%;
+       
+        transition-delay: 1s;
+        transition-duration: 5s;
+        transition-timing-function: ease-in;
+            position: absolute;
+            right: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(hero_image.jpg);
+            width: 100%;
+            height: 380px;   }
+
+            .img3{
+                translate: 250%;
+            transition:all;
+            transition-delay: 0s;
+            transition-duration: 14s;
+            transition-timing-function: ease-in;
+                position: absolute;
+                right: 250%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(img2.jpg);
+                width: 100%;
+                height: 380px;   }
+
+                .img4{
+                    translate: 350%;
+                transition:all;
+                transition-delay: 4s;
+                transition-duration: 17s;
+                transition-timing-function: ease-in;
+                    position: absolute;
+                    right: 350%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-image: url(img3.jpg);
+                    width: 100%;
+                    height: 380px;   }
+                    .img5{
+                        translate: 450%;
+                    transition:all;
+                    transition-delay: 2s;
+                    transition-duration: 25s;
+                    transition-timing-function: ease-in;
+                        position: absolute;
+                        right: 450%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-image: url(img4.jpg);
+                        width: 100%;
+                        height: 380px;   }
+
+                        .img6{
+                            translate: 550%;
+                        transition:all;
+                        transition-delay: 2s;
+                        transition-duration: 32s;
+                        transition-timing-function: ease-in;
+                            position: absolute;
+                            right: 550%;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-image: url(img5.jpg);
+                            width: 100%;
+                            height: 380px;   }
+        
+
+
+
+    .hero-message{
+        background-color: white;
+        color: black;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        width: 80%;
+        margin-bottom: 25px;
+        
+    }
+
+    .hero-message a{
+        color: #007185;
+    }
+
+    /* shop section */
+
+    .shop-section{
+        display: flex;  /* brings all box in one line*/
+        flex-wrap: wrap;  /* sets only 4 box in a line*/
+        justify-content: space-evenly;
+        background-color: rgb(217, 188, 196);
+    }
+
+
+    .box{
+
+        
+
+        margin-top: 15px;
+        
+    
+        height: 300px;
+        width: 23%;
+        background-color: white;
+        padding: 20px 0px 15px;
+    }
+
+    .box-img{
+        
+        height: 200px;
+        background-size: cover;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .box-content{
+        margin-right: 1rem;
+        margin-left: 1rem;   /*to give space around image in a box*/
+    }
+
+    .box-content p {
+        color: #007185;
+    }
+
+
+    .box:hover{
+        
+        transition: all;
+        transition-timing-function: ease-in;
+        transition-duration: 0.3s;
+        
+
+        transform: scale(1.1);
+        background-color: #331D2C;
+    }
+
+    .box:hover h2{ color:white;}
+
+    .box:hover .box-img{
+        
+        background-repeat: no-repeat;
+        
+        height: 150px;
+        width:  100%;
+    }
+
+    .dropdown{
+       margin-top: 0;
+        display: none;
+        width: 100%;
+        height: 110px; 
+        background-color: #3F2E3E;
+        color: white;
+        font-size: 12px;
+        
+       
+    }
+
+    
+
+    .box:hover .dropdown{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box:hover p{display: none;}
+
+    .container {
+        
+        margin-top: 50px;
+        display: flex;
+        overflow-x:scroll;
+        width: 100%;
+        height: 250px; /* Adjust the height as needed */
+      }
+
+
+      .container::-webkit-scrollbar {  /*to hide scroll bar*/
+        display: none;
+        
+      }
+
+
+      /* .boxx{
+        transition: all;
+        translate: -1000px;
+        transition-duration: 50s;
+        transition-timing-function: ease-in;
+      } */
+
+      
+      
+      .boxx {
+        flex: 0 0 auto;
+        width: 300px;
+        height: 200px;
+        background-color:white;
+        margin-right: 10px;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 30px;
+
+
+      }
+
+
+     
+
+      .box-conten1{
+
+         display: flex;
+        align-items: center;
+        justify-content: center;
+       
+
+      }
+
+      .box-img1{
+        height: 150px;
+        width: 100%;
+        background-size: cover;
+      }
+
+      .boxx h2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: medium;
+      }
+
+     
+
+
+      /*footer*/
+
+      footer
+      .foot-panel1{
+       
+        background-color: #37475a;
+        color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.85rem;
+
+      }
+
+      .foot-panel2{
+        background-color: #222f3d;
+    color: white;
+height: 300px;
+display: flex;  /* all ul comes inline*/
+justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;  /* list was inline, so it is made one down other*/
+
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.2px solid #606f7e;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4{
+    background-color:  #0f1111;
+    color: white;
+   height: 80px;
+   font-size: 0.7rem;
+    text-align: center;
+}
+.pages{
+    
+    padding-top: 25px;
+}
+.copyright{
+    
+    padding-top: 5px;
+  }
+.back-to-top {
+   
+   color: white;
+    text-decoration: none;
+  
+}
+  
+
+.img6:hover{
+    position: absolute;
+    right: 550%;
+    translate: -550%;
+    transition: all;
+    transition-duration: 50s;
+}
+   
+.img5:hover {
+    translate: -450%;
+    transition: all;
+    transition-duration: 40s;
+}
+
+.img4:hover {
+    translate: -350%;
+    transition: all;
+    transition-duration: 30s;
+}
+
+.img3:hover {
+    translate: -250%;
+    transition: all;
+    transition-duration: 20s;
+}
+
+
+.img2:hover {
+    translate: -100%;
+    transition: all;
+    transition-duration: 10s;
+}
